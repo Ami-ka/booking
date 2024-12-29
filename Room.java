@@ -1,4 +1,5 @@
 
+
 public class Room extends Hotel {
     private int roomNum;
     private double price;
@@ -18,6 +19,10 @@ public class Room extends Hotel {
 
     
     
+    public void setBookStatus(BookStatus newStatus){
+        this.bookStatus = newStatus;
+    }
+
     //getters:
     public RoomType get_roomType(){
         return roomType;
