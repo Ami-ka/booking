@@ -19,7 +19,7 @@ abstract class Hotel {
     public static String login(User user){
         
         for(User i : users){
-            if ((i.get_login().equals(user.get_login())) && (i.get_password().equals(user.get_password()) )){
+            if ((i.get_login().equals(user.get_login())) && (i.get_password_hash() == user.get_password_hash() )){
                 return "login sucessful";
                 
             }
@@ -36,11 +36,7 @@ abstract class Hotel {
         System.out.println("Rooms:\n");
 
         for(Room i : rooms){
-            System.out.println("Room number: " + i.get_roomNum() );
-            System.out.println("Room price per night: " + i.get_price() + "kzt");
-            System.out.println("Room status: " + i.get_bookStatus());
-            System.out.println("Room type: " + i.get_roomType());
-            System.out.println(" ");
+            System.out.println(i.toString());
         }
 
         

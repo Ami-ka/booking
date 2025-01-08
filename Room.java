@@ -40,4 +40,13 @@ public class Room extends Hotel {
         return bookStatus;
     }
 
+
+
+    @Override
+
+    public String toString(){
+        return "Room number :" + roomNum + "\nRoom price :" + price + "\nRoom status :" + bookStatus + "\nRoom type :" + roomType + "\n ";
+    }
+
 }
+            
